@@ -10,10 +10,12 @@
 	<properties>
 		<my.prop>ANTHONY</my.prop>
 	</properties>
-	
+
 	<modules>
-	<module>pro</module>
+		<module>pro</module>
 	</modules>
+
+
 
 
 	<distributionManagement>
@@ -21,7 +23,19 @@
 			<id>snapshots</id>
 			<url>http://localhost:8081/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
+
+		<repository>
+			<id>releases</id>
+			<url>http://localhost:8081/nexus/content/repositories/releases</url>
+		</repository>
 	</distributionManagement>
+
+
+	<scm>
+		<connection>scm:git@github.com:AntonBoo/denof.git</connection>
+		<developerConnection>scm:git@github.com:AntonBoo/denof.git</developerConnection>
+		<url>scm:git@github.com:AntonBoo/denof.git</url>
+	</scm>
 
 
 	<build>
@@ -44,6 +58,13 @@
 							<argument>${my.prop}</argument>
 						</arguments>
 					</configuration>
+				</plugin>
+
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>2.5.3</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
