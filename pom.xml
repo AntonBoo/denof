@@ -32,9 +32,9 @@
 
 
 	<scm>
-		<connection>scm:git@github.com:AntonBoo/denof.git</connection>
-		<developerConnection>scm:git@github.com:AntonBoo/denof.git</developerConnection>
-		<url>scm:git@github.com:AntonBoo/denof.git</url>
+		<connection>scm:git:ssh:git@github.com:AntonBoo/denof.git</connection>
+		<developerConnection>scm:git::ssh:git@github.com:AntonBoo/denof.git</developerConnection>
+		<url>https://github.com/AntonBoo/denof.git</url>
 	</scm>
 
 
