@@ -30,12 +30,6 @@
 			<url>http://localhost:8081/nexus/content/repositories/releases</url>
 		</repository>
 
-		<site>
-			<id>github</id>
-			<name>github</name>
-			<url>scm:git:ssh://git@github.com/AntonBoo/denof.git</url>
-		</site>
-
 
 	</distributionManagement>
 
@@ -44,7 +38,6 @@
 		<connection>scm:git:ssh://git@github.com:AntonBoo/denof.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com:AntonBoo/denof.git</developerConnection>
 		<url>https://github.com/AntonBoo/denof.git</url>
-	  <tag>parent-1.0R</tag>
   </scm>
 
 
