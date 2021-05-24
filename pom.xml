@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.errera</groupId>
 	<artifactId>parent</artifactId>
-	<version>1.0R</version>
+	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -33,7 +33,7 @@
 		<site>
 			<id>github</id>
 			<name>github</name>
-			<url>scm:git:ssh://git@github.com/${repo.user}/${repo.name}.git</url>
+			<url>scm:git:ssh://git@github.com/AntonBoo/denof.git</url>
 		</site>
 
 
