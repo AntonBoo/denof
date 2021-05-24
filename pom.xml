@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.errera</groupId>
 	<artifactId>parent</artifactId>
@@ -26,14 +28,22 @@
 			<id>releases</id>
 			<url>http://localhost:8081/nexus/content/repositories/releases</url>
 		</repository>
+
+		<site>
+			<id>github</id>
+			<name>github</name>
+			<url>scm:git:ssh://git@github.com/${repo.user}/${repo.name}.git</url>
+		</site>
+
+
 	</distributionManagement>
 
 
 	<scm>
-		<connection>https://github.com/AntonBoo/denof.git</connection>
-		<developerConnection>https://github.com/AntonBoo/denof.git</developerConnection>
+		<connection>scm:git:ssh://git@github.com:AntonBoo/denof.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:AntonBoo/denof.git</developerConnection>
 		<url>https://github.com/AntonBoo/denof.git</url>
-  </scm>
+	</scm>
 
 
 	<build>
