@@ -9,11 +9,14 @@
 
 	<properties>
 		<my.prop>ANTHONY</my.prop>
+		<project.scm.id>GitHub</project.scm.id>
 	</properties>
 
 	<modules>
 		<module>pro</module>
 	</modules>
+	
+	
 
 
 
